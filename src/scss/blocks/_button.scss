@@ -1,0 +1,22 @@
+.button {
+  background: #ffb734;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00435b;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

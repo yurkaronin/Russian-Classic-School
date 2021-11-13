@@ -1,0 +1,116 @@
+.header {
+  position: fixed;
+  // padding: 18px 0;
+  background-color: transparent;
+  color: #ffffff;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__top {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 34px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ffffff30;
+  @media (max-width: 1024px) {
+    grid-template-columns: 80px auto 56px;
+    align-items: center;
+    gap: 24px;
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 53px auto 50px;
+    gap: 15px;
+  }
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 550px;
+  }
+}
+.header__description {
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media (max-width: 1300px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 18px;
+  }
+}
+.header__telephone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__contacts {
+  display: grid;
+  grid-template-columns: 2fr 2fr 72px;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: 160px 155px 72px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  @media (max-width: 630px) {
+    display: none;
+  }
+}
+.header__social-list {
+  list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  grid-template-columns: 32px 32px;
+}
+
+.header__social-link {
+  width: 32px;
+  img {
+    display: block;
+    transition: 0.5s;
+  }
+}
+
+.header__social-link:hover {
+  img {
+    transform: scale(1.2);
+  }
+}
+
+.header__button {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

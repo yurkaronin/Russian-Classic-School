@@ -1,0 +1,33 @@
+.first-screen {
+  background-color: #696b64;
+  background-image: url(../img/bg/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    background: linear-gradient(0deg, rgba(10, 33, 42, 0.4), rgba(10, 33, 42, 0.4));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .wrapper {
+    z-index: 3;
+    position: relative;
+  }
+}
+
+.social-list {
+
+}
+.main-navigation {
+}
