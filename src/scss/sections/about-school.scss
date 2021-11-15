@@ -1,0 +1,55 @@
+.about-school {
+  padding: 78px 0 80px;
+  background-color: #fff;
+  color: #17191a;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 0;
+}
+.about-school .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-school__image {
+  max-width: 530px;
+  margin-top: -158px;
+}
+
+.about-school__content-wrapper {
+  max-width: 640px;
+}
+
+.about-school .title {
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #00435b;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.about-school__lead {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #00435b;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.about-school__text {
+  margin-bottom: 40px;
+  p {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.about-school .button {
+  padding: 22px 57px;
+}

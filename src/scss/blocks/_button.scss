@@ -2,7 +2,7 @@
   background: #ffb734;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 100%;
   padding: 10px 20px;
@@ -35,5 +35,70 @@
     left: 0;
     opacity: 0.5;
     border: 1px solid #ffd55f;
+    pointer-events: none;
   }
+}
+
+.swiper-button {
+  background: #ffb734;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: initial;
+  font-size: 0;
+  line-height: 0;
+  padding: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  transition: 0.5s;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+
+  position: absolute;
+  left: -36px;
+  top: 41%;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border: 1px solid #ffd55f;
+    pointer-events: none;
+  }
+  &::after {
+    content:  url(../img/icons/arrov-slide.svg);
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    margin: 0;
+    pointer-events: none;
+
+  }
+
+
+}
+.swiper-button--next {
+  left: initial;
+  right: -31px;
+}
+.swiper-button--next::after {
+  transform: rotate(180deg);
+
 }
