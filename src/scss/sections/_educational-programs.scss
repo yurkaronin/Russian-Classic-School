@@ -1,5 +1,5 @@
 .educational-programs {
-  padding: 102px 0 80px;
+  padding: 102px 0 76px;
 }
 .wrapper {
 }
@@ -34,7 +34,6 @@
   margin: 0;
   display: flex;
   gap: 16px;
-  // grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-wrap: wrap;
   align-items: stretch;
 }
@@ -44,15 +43,18 @@
 .educational-announcement {
   border: 1px solid #ccd9de;
   padding: 40px 12px;
-  padding-left: 40px;
+  padding-left: 28px;
   text-decoration: none;
   display: flex;
   gap: 40px;
   justify-content: flex-start;
   align-items: center;
   transition: 0.4s linear;
+  min-height: 160px;
 }
 .educational-announcement__icon {
+  max-width: 72px;
+  width: 100%;
   .custom-element {
     fill: #ffb734;
     transition: 0.4s linear;
@@ -75,8 +77,6 @@
     top: -10px;
   }
 }
-
-/* class="custom-element" */
 
 .educational-announcement:hover,
 .educational-announcement:active,

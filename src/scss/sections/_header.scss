@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  padding-top: 18px;
+  padding-top: 15px;
   background-color: transparent;
   color: #ffffff;
   z-index: 99;
@@ -8,9 +8,11 @@
   top: 0;
   left: 0;
   right: 0;
+  transition: 0.4s linear;
 }
-@media (max-width: 1420px) {
-  .header.wrapper {
+
+.header .wrapper {
+  @media (max-width: 1420px) {
     padding: 0;
     width: 100%;
     max-width: 100%;
@@ -23,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 11px 35px;
-  padding-bottom: 11px;
+  padding-bottom: 14px;
 
   @media (max-width: 1420px) {
     gap: 11px 25px;
@@ -48,6 +50,7 @@
 
 .header__logo {
   max-width: 80px;
+  transition: 0.2s linear;
 
   @media (max-width: 770px) {
     max-width: 53px;
@@ -114,28 +117,6 @@
   text-align: right;
   color: #ffffff;
   text-decoration: none;
-}
-
-.header__social-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  gap: 8px;
-}
-.header__social-link {
-  width: 32px;
-}
-.header__social-icon {
-  display: block;
-  transition: 0.5s;
-}
-
-.header__social-link:hover .header__social-icon {
-  transform: scale(1.2);
 }
 
 .header__menu-button {
@@ -253,6 +234,65 @@
     }
     .navigation__link::after {
       right: 0;
+    }
+  }
+}
+
+// header sticky
+.header.sticky {
+  background-color: #ffffff;
+  color: #00435b;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+  .header__description {
+    color: #00435b;
+  }
+  .header__telephone {
+    color: #000000;
+  }
+  .navigation__link {
+    color: #00435b;
+  }
+
+  .navigation {
+    border-top: 1px solid #ccd9de;
+  }
+
+  .header__logo {
+    max-width: 53px;
+    margin-top: -12px;
+
+    @media (max-width: 1420px) {
+      max-width: 68px;
+      margin-top: 0;
+    }
+  }
+  .header__details {
+    max-width: 1240px;
+
+    @media (max-width: 1420px) {
+      max-width: 545px;
+    }
+  }
+  .header__content-wrapper {
+    gap: 11px;
+    align-items: flex-start;
+    margin-top: 5px;
+    padding-bottom: 1px;
+
+    @media (max-width: 1420px) {
+      padding-bottom: 16px;
+      margin-top: 0;
+    }
+  }
+  .navigation__link {
+    padding: 15px 0 14px;
+  }
+
+  .header__description {
+    @media (max-width: 1420px) {
+      font-size: 20px;
+      max-width: 220px;
     }
   }
 }

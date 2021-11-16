@@ -15,6 +15,12 @@
 .about-school__image {
   max-width: 530px;
   margin-top: -158px;
+  margin-bottom: -7px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .about-school__content-wrapper {
@@ -30,14 +36,10 @@
   margin: 0;
   margin-bottom: 20px;
 }
-.about-school__lead {
-  font-family: "Lora", sans-serif;
-  font-style: italic;
-  font-weight: 400;
+.about-school__subtitle {
   font-size: 20px;
   line-height: 32px;
   color: #00435b;
-  margin: 0;
   margin-bottom: 30px;
 }
 .about-school__text {
