@@ -62,4 +62,8 @@
 .header__social-icon {
 }
 .contacts__map {
+  img {
+    object-fit: cover;
+    display: block;
+  }
 }

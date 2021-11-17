@@ -17,11 +17,19 @@
   padding: 20px;
   background-color: #ffb734;
 }
+
+.social-list .decorate-border {
+  &::after {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+  }
+}
+
 .social-list__icon {
   display: block;
   fill: #00435b;
-  width: 16px;
-  height: 16px;
+  // width: 16px;
+  // height: 16px;
 }
 
 .social-list__link:hover .social-list__icon {

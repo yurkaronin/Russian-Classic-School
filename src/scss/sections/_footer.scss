@@ -1,0 +1,23 @@
+.footer {
+  padding: 23px 0 24px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.copiryght {
+  display: flex;
+  align-items: center;
+
+}
+.developers-link {
+  a {
+  }
+  img {
+    display: block;
+    margin-left: 16px;
+  }
+}

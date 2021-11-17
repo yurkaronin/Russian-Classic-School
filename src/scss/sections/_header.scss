@@ -238,6 +238,23 @@
   }
 }
 
+.header__social-list {
+  gap: 8px;
+
+  .social-list__link {
+    padding: 10px;
+    background-color: #00435b;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-list__icon {
+    position: absolute;
+  }
+}
+
 // header sticky
 .header.sticky {
   background-color: #ffffff;
