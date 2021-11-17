@@ -17,9 +17,6 @@
 }
 .faq__item {
   background-color: #fff;
-  height: 64px;
-  overflow: hidden;
-  transition: 1s;
 }
 .faq__button {
   width: 100%;
@@ -54,7 +51,7 @@
   span::after {
     content: "";
     display: block;
-    transition: 0.2s;
+    transition: 0.3s;
     width: 30px;
     height: 2px;
     background-color: #00435b;
@@ -68,6 +65,7 @@
   color: #454747;
   font-size: 16px;
   line-height: 24px;
+  display: none;
 }
 
 .faq__header {
@@ -89,7 +87,9 @@
 }
 
 .faq__item.active {
-  height: auto;
+  .faq__details {
+    display: block;
+  }
 
   .faq__button {
     max-width: 100%;

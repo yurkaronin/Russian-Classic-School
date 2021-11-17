@@ -53,7 +53,15 @@
 }
 
 .navigation__link::after {
-  display: none;
+  content: "";
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
 
   @media (max-width: 1420px) {
     content: url(../img/icons/arrow-right.svg);
@@ -74,46 +82,29 @@
 
 .navigation__link:hover {
   color: #ffb734;
-}
 
-.navigation__link:hover {
   &::after {
-    content: "";
-    display: block;
-    background-color: transparent;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    top: -1px;
-    left: 0;
-    right: 0;
     background-color: #ffb734;
 
     @media (max-width: 1420px) {
-    content: url(../img/icons/arrow-right.svg);
-    width: 45px;
-    left: initial;
-    bottom: initial;
-    right: 13px;
-    position: absolute;
-    background-color: transparent;
-    top: initial;
-    height: 45px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+      content: url(../img/icons/arrow-right.svg);
+      width: 45px;
+      left: initial;
+      bottom: initial;
+      right: 13px;
+      position: absolute;
+      background-color: transparent;
+      top: initial;
+      height: 45px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
-.navigation__link:not([href]) {
-  opacity: 0.7;
-}
-.navigation__link:active,
-.navigation__link:target,
-.navigation__link:focus
- {
+.navigation__link--active {
   &::after {
     content: "";
     background-color: #ffb734;
@@ -124,21 +115,22 @@
     bottom: -1px;
     left: 0;
     right: 0;
-
-    @media (max-width: 1420px) {
-    content: url(../img/icons/arrow-right.svg);
-    width: 45px;
-    left: initial;
-    bottom: initial;
-    right: 13px;
-    position: absolute;
-    background-color: transparent;
     top: initial;
-    height: 45px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+    /* @media (max-width: 1420px) {
+      content: url(../img/icons/arrow-right.svg);
+      width: 45px;
+      left: initial;
+      bottom: initial;
+      right: 13px;
+      position: absolute;
+      background-color: transparent;
+      top: initial;
+      height: 45px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
   }
 }
