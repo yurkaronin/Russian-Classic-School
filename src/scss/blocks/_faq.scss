@@ -2,8 +2,6 @@
   background-color: #f3f3eb;
   padding: 79px 0 80px;
 }
-.wrapper {
-}
 .faq .faq__title {
   margin-bottom: 33px;
 }
@@ -23,7 +21,7 @@
   border: none;
   position: relative;
   cursor: pointer;
-  font-family: "Lora", sans-serif;
+  font-family: "Lora", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -74,7 +72,7 @@
 
 .faq__question {
   margin: 0;
-  font-family: "Lora", sans-serif;
+  font-family: "Lora", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

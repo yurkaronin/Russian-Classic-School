@@ -12,9 +12,6 @@
   margin-bottom: 64px;
 }
 
-.wrapper {
-}
-
 .teachers__slider {
   position: relative;
 }
@@ -89,23 +86,17 @@
     left: 0;
   }
 }
-.teachers-swiper__button-next {
-}
-.swiper-button {
-}
-.teachers-swiper__button-prev {
-}
-.swiper-button--prev {
-}
+
 .teachers-swiper__pagination {
   position: absolute;
   top: -114px;
   right: 0;
   left: initial;
   width: max-content;
-  font-family: "Lora", sans-serif;
+  font-family: "Lora", serif;
   line-height: 32px;
   text-align: right;
   color: #ffffff;
   opacity: 0.7;
+  height: max-content;
 }

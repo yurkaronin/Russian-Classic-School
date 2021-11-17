@@ -40,50 +40,46 @@
   position: relative;
 
   @media (max-width: 1420px) {
-    font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
-    text-transform: uppercase;
     padding-left: 13px;
     padding-right: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.navigation__link::after {
-  content: "";
-  display: block;
-  background-color: transparent;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-
-  @media (max-width: 1420px) {
-    content: url(../img/icons/arrow-right.svg);
-    width: 45px;
-    left: initial;
-    bottom: initial;
-    right: 13px;
-    position: absolute;
-    background-color: transparent;
-    top: initial;
-    height: 45px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734;
   }
-}
-
-.navigation__link:hover {
-  color: #ffb734;
 
   &::after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 1420px) {
+      content: url(../img/icons/arrow-right.svg);
+      width: 45px;
+      left: initial;
+      bottom: initial;
+      top: initial;
+      right: 13px;
+      height: 45px;
+      padding: 10px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+    }
+  }
+
+  &:hover::after {
     background-color: #ffb734;
 
     @media (max-width: 1420px) {
@@ -101,6 +97,7 @@
       align-items: center;
       justify-content: center;
     }
+
   }
 }
 
@@ -117,20 +114,8 @@
     right: 0;
     top: initial;
 
-    /* @media (max-width: 1420px) {
-      content: url(../img/icons/arrow-right.svg);
-      width: 45px;
-      left: initial;
-      bottom: initial;
-      right: 13px;
-      position: absolute;
-      background-color: transparent;
-      top: initial;
-      height: 45px;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    } */
+    @media (max-width: 1420px) {
+      display: none;
+    }
   }
 }
