@@ -19,7 +19,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  // justify-content: space-between;
 }
 
 .gallery__item {
@@ -51,6 +50,7 @@
 .gallery__description {
   background-color: #fff;
   padding: 30px 32px 26px;
+  transition: 0.6s linear;
 }
 
 .gallery__name {
@@ -71,4 +71,12 @@
   display: block;
   font-size: 16px;
   line-height: 24px;
+}
+
+.gallery__link:hover,
+.gallery__link:focus,
+.gallery__link:active {
+  .gallery__description {
+    background-color: #FFB734;
+  }
 }

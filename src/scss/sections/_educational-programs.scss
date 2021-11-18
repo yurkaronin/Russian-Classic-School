@@ -44,6 +44,11 @@
   gap: 16px;
   flex-wrap: wrap;
   align-items: stretch;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (max-width: 1420px) {
     justify-content: space-between;
