@@ -1,6 +1,12 @@
 .navigation {
   width: 100%;
   max-width: 100%;
+
+  @media (max-width: 770px) {
+    padding: 30px;
+    padding-top: 135px;
+    padding-bottom: 120px;
+  }
 }
 
 .navigation__list {
@@ -21,6 +27,7 @@
 
 .navigation__item {
   position: relative;
+
   @media (max-width: 1420px) {
     width: 100%;
     border-bottom: 1px solid #33697c;
@@ -47,6 +54,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (max-width: 770px) {
+    font-size: 14px;
+    padding: 20px 13px;
+  }
+
   &:hover,
   &:active,
   &:focus {
@@ -73,9 +86,12 @@
       right: 13px;
       height: 45px;
       padding: 10px;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
+    }
+
+    @media (max-width: 770px) {
+      .navigation__link::after {
+        right: 0;
+      }
     }
   }
 
@@ -97,7 +113,6 @@
       align-items: center;
       justify-content: center;
     }
-
   }
 }
 

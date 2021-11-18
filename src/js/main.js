@@ -1,6 +1,22 @@
 var swiper = new Swiper(".teachers-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 32,
+  breakpoints: {
+    /* 320: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    }, */
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    1420: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    }
+  },
   grabCursor: true,
   pagination: {
     el: ".teachers-swiper__pagination",

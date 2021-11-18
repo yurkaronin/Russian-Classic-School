@@ -1,14 +1,19 @@
 .title {
   position: relative;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 64px;
-  color: #00435B;
+  color: #00435b;
   margin: 0;
   margin-bottom: 34px;
   text-decoration: none;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  line-height: 40px;
+  }
 
   &::before {
     position: absolute;
@@ -19,5 +24,10 @@
     left: -1px;
     top: 2px;
     background: #ffb734;
+
+    @media (max-width: 1024px) {
+      left: 0;
+      top: -20%;
+    }
   }
 }

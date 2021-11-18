@@ -2,6 +2,10 @@
   padding: 78px 0 80px;
   background-color: #f0f4f5;
   color: #00435b;
+
+  @media (max-width: 1420px) {
+    padding: 68px 0 90px;
+  }
 }
 
 .gallery__title {
@@ -15,10 +19,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  justify-content: space-between;
 }
 
 .gallery__item {
-  max-width: 417px;
+  width: calc((100% / 3) - 23px);
+
+  @media (max-width: 1420px) {
+    width: calc((100% / 2) - 23px);
+  }
 }
 
 .gallery__link {

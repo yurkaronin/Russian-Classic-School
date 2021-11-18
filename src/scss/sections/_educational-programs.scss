@@ -1,13 +1,19 @@
 .educational-programs {
   padding: 102px 0 76px;
-}
-.wrapper {
+
+  @media (max-width: 1420px) {
+    padding: 92px 0 90px;
+  }
 }
 .educational-programs__content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-bottom: 17px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 }
 .educational-programs__title {
   margin-bottom: 26px;
@@ -20,12 +26,14 @@
   margin-top: 25px;
   padding-right: 112px;
 
+  @media (max-width: 1420px) {
+    padding-right: 0;
+  }
+
   p {
     margin-top: 0;
     margin-bottom: 24px;
   }
-}
-.educational-programs__text {
 }
 
 .educational-programs__list {
@@ -36,9 +44,26 @@
   gap: 16px;
   flex-wrap: wrap;
   align-items: stretch;
+
+  @media (max-width: 1420px) {
+    justify-content: space-between;
+  }
 }
 .educational-programs__item {
-  width: 316px;
+  width: calc((100% / 4) - 16px);
+
+  @media (max-width: 1420px) {
+    width: calc((100% / 3 ) - 16px);
+  }
+
+  @media (max-width: 1050px) {
+    width: calc((100% / 2 ) - 16px);
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .educational-announcement {
   border: 1px solid #ccd9de;

@@ -3,6 +3,10 @@
 
   .swiper-button {
     top: 34%;
+
+    @media (max-width: 1024px) {
+      position: relative;
+    }
   }
 }
 .reviews__title {
@@ -14,6 +18,10 @@
   padding: 0 225px;
   text-align: center;
 
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+
   .swiper-button {
     left: 0;
   }
@@ -22,15 +30,16 @@
     left: initial;
   }
 }
-.swiper {
-}
-.reviews-swiper {
-}
-.swiper-wrapper {
-}
-.reviews__item {
-}
-.swiper-slide {
+.reviews__button-wrapper {
+  @media (max-width: 1024px) {
+    display: flex;
+    max-width: max-content;
+    position: relative;
+    gap: 24px;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }
 .reviews__name {
   font-size: 24px;
@@ -49,7 +58,7 @@
 .reviews__info {
   margin: 0;
   color: #747575;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;

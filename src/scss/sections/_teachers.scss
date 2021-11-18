@@ -5,6 +5,10 @@
   overflow: hidden;
   z-index: 3;
   position: relative;
+
+  @media (max-width: 1420px) {
+    padding: 68px 0 98px;
+  }
 }
 
 .teachers__title {
