@@ -15,6 +15,7 @@
   align-items: center;
   max-width: max-content;
   transition: 0.5s;
+  border: none;
 
   &:hover {
     transform: scale(1.1);
@@ -111,4 +112,11 @@
 
 .swiper-button-disabled {
   opacity: 0;
+}
+
+.button--close-text {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 20px 45px;
+  margin-top: 15px;
 }

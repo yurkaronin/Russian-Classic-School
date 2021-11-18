@@ -58,7 +58,39 @@
   display: block;
   margin: 0;
   margin-bottom: 27px;
+  position: relative;
+  padding-left: 36px;
+  display: flex;
+  justify-content: space-between;
+   transition: 0.2s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734;
+  }
+
+  &:before {
+    content: url(../img/icons/icon-phone.svg);
+    position: absolute;
+    left: 0;
+  }
 }
+
+.contacts__adress {
+  position: relative;
+  padding-left: 36px;
+  display: flex;
+  justify-content: space-between;
+
+  &:before {
+    content: url(../img/icons/icon-geo-marker.svg);
+    position: absolute;
+    left: 0;
+  }
+}
+
+
 .contacts__group-title {
   font-size: 24px;
   line-height: 32px;
@@ -84,4 +116,9 @@
     height: 100%;
     width: 100%;
   }
+}
+
+.contacts__modal-button {
+  margin-bottom: 40px;
+  padding: 20px 25px;
 }

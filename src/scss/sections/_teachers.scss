@@ -81,6 +81,13 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734;
+  }
+
   &::after {
     content: url(../img/icons/arrow-bg.svg);
     display: block;

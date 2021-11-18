@@ -1,0 +1,155 @@
+<!-- <button class="btn" data-path="dialog-window-callback">Окно 1</button> -->
+<!-- <button class="btn" data-path="dialog-window-message">Окно 2</button> -->
+<!-- <button class="btn" data-path="dialog-window-teacher-card">Окно 3</button> -->
+<button class="btn" data-path="dialog-window-educational-programs">Окно 4</button>
+
+
+
+
+<div class="modals">
+  <div class="modal-overlay">
+
+    <!-- callback  -->
+    <section class="modal decorate-border" data-target="dialog-window-callback">
+
+      <h3 class="modal__title title">Заказать звонок</h3>
+      <p class="modal__subtitle subtitle">Оставьте Ваши контактные данные и мы перезвоним Вам в ближайшее время</p>
+
+      <form class="modals__form custom-form" action="" method="post">
+
+        <p class="custom-form__item-wrapper">
+          <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
+          <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+            id="CUST-FORM-NAME" data-required required>
+        </p>
+
+        <p class="custom-form__item-wrapper">
+          <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
+          <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+            id="CUST-FORM-TEL" data-required required>
+        </p>
+
+        <div class="custom-form__footer">
+          <label class="custom-form__label custom-form__label--confurm">
+            <input class="visually-hidden" type="checkbox" name="confurm" checked>
+            <p class="custom-form__potilic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
+            </p>
+          </label>
+        </div>
+
+        <button class="custom-form__button button button--border js-validate" type="submit">Заказать звонок</button>
+      </form>
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+    <!-- message  -->
+    <section class="modal modal--2 decorate-border" data-target="dialog-window-message">
+
+      <h3 class="modal__title title">Заказ принят</h3>
+      <p class="modal__subtitle subtitle">Ваши заказ принят. Мы свяжемся с Вами в ближайшее время</p>
+
+      <button class="button button--border button--close-text" type="button">Закрыть</button>
+
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+
+    <!-- teacher card  -->
+    <section class="modal modal--free decorate-border" data-target="dialog-window-teacher-card">
+
+      <div class="teacher-card">
+        <img class="teacher-card__photo" src="img/teachers/1.jpg" alt="фотография учителя">
+
+        <div class="teacher-card__details">
+          <h3 class="teacher-card__title title">Дмитрий Валерьевич Егоров</h3>
+          <p class="teacher-card__subtitle subtitle">математик и физик</p>
+          <div class="teacher-card__description">
+            <p>Окончил радиофизический факультет ННГУ им. Лобачевского. Занимаюсь репетиторством с 2010 года, а в 2016
+              году стал
+              обучать по программе РКШ.</p>
+            <p>Арифметика и алгебра в этой системе дают сильную логическую базу, качественное
+              понимание
+              всех
+              действий и связь между величинами.</p>
+            <p>Геометрия более обширная по материалу и сложная, чем в обычной
+              программе.</p>
+            <p>Всё этоучит мыслить сложнее и уметь аргументировать, чего так не хватает в наше время</p>
+          </div>
+        </div>
+
+        <button class="button button--border button--close-text" type="button">Закрыть</button>
+      </div>
+
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+    <!-- educational-program  -->
+    <section class="modal modal--free decorate-border big-mod" data-target="dialog-window-educational-programs">
+      <div class="educational-programs-modal">
+        <h3 class="educational-programs-modal__title title">Математика</h3>
+        <img class="educational-programs-modal__image" src="img/educational-programs/modal-image.jpg" alt="фотография учебного курса">
+        <div class="educational-programs-modal__description">
+          <p>Мы используем уникальную систему, поскольку в ней собран лучший опыт отечественного образования и учитываются
+          современные проверенные тенденции.</p>
+          <p>В основе всей системы и каждого отдельно взятого урока лежит принцип природосообразности: согласование воспитания и
+          обучения с природными зонами роста развития ребёнка, применение сбалансированных средств для его развития.
+          Последовательность в обучении каждому предмету, задана логикой изучаемого материала, а интерес поддерживается
+          выверенными методическими приёмами.</p>
+          <p>Радонеж – это пространство для неравнодушных людей, желающих сохранить психоэмоциональное здоровье детей и поэтому
+          выбирающих классическое, высокорезультативное образование. Многие родители уже заметили и оценили разницу , как в
+          образовательном уровне учащихся РКШ, так и в плане общего развития ребенка.</p>
+        </div>
+      </div>
+
+      <div class="educational-programs-modal custom-modal-form">
+
+        <h3 class="modal__title title">Давайте попробуем</h3>
+        <p class="modal__subtitle subtitle">Оставьте Ваши контактные данные и мы перезвоним Вам в ближайшее время</p>
+
+        <form class="modals__form custom-form" action="" method="post">
+
+          <p class="custom-form__item-wrapper">
+            <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
+            <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+              id="CUST-FORM-NAME" data-required required>
+          </p>
+
+          <p class="custom-form__item-wrapper">
+            <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
+            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __" id="CUST-FORM-TEL"
+              data-required required>
+          </p>
+
+          <div class="custom-form__footer">
+            <label class="custom-form__label custom-form__label--confurm">
+              <input class="visually-hidden" type="checkbox" name="confurm" checked>
+              <p class="custom-form__potilic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
+              </p>
+            </label>
+          </div>
+
+          <button class="custom-form__button button button--border js-validate" type="submit">Заказать звонок</button>
+        </form>
+
+      </div>
+
+
+
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+
+  </div>
+</div>

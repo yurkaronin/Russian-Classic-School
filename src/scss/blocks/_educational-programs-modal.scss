@@ -1,0 +1,30 @@
+.educational-programs-modal {
+  max-width: 980px;
+  padding: 54px 56px 40px;
+
+  @media (max-width: 900px) {
+    max-width: 750px;
+    padding: 32px;
+  }
+
+  &::after {
+    border-color: #ccd9de;
+  }
+
+  .custom-form {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .custom-form__item-wrapper {
+    width: calc(50% - 18px);
+  }
+}
+
+.educational-programs-modal__title {
+  margin-bottom: 32px !important;
+
+  @media (max-width: 900px) {
+    margin-bottom: 15px !important;
+  }
+}

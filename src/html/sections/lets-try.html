@@ -10,15 +10,15 @@
       <p class="custom-form__item-wrapper">
         <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
         <input class="custom-form__input" name="name" type="text"
-          placeholder="Представьтесь, пожалуйста" id="CUST-FORM-NAME">
+          placeholder="Представьтесь, пожалуйста" id="CUST-FORM-NAME" data-required required>
       </p>
 
       <p class="custom-form__item-wrapper">
         <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
-        <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __" id="CUST-FORM-TEL">
+        <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __" id="CUST-FORM-TEL" data-required required>
       </p>
 
-      <button class="custom-form__button button button--border" type="submit">Записаться</button>
+      <button class="custom-form__button button button--border js-validate" type="submit">Записаться</button>
     </form>
   </div>
 </section>

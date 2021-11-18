@@ -55,6 +55,10 @@
 .lets-try__title {
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media (max-width: 770px) {
+    color: #00435B;
+  }
 }
 
 .lets-try__subtitle {
@@ -64,4 +68,8 @@
   display: inline-block;
   margin-bottom: 22px;
   max-width: 780px;
+
+   @media (max-width: 770px) {
+    color: #00435B;
+  }
 }

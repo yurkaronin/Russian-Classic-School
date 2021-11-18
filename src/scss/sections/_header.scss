@@ -57,15 +57,20 @@
     padding-top: 16px;
     gap: 19px;
   }
+
+  @media (max-width: 500px) {
+    gap: 10px;
+  }
 }
 
 .header__logo {
   max-width: 80px;
   transition: 0.3s linear;
 
-  /* @media (max-width: 770px) {
-    max-width: 53px;
-  } */
+  @media (max-width: 500px) {
+    max-width: 68px;
+    margin-top: 0;
+  }
 }
 .header__details {
   max-width: 1197px;
@@ -133,6 +138,13 @@
   text-align: right;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.2s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734 !important;
+  }
 }
 
 .header__menu-button {
@@ -277,6 +289,10 @@
       align-items: center;
       gap: 20px;
     }
+
+    @media (max-width: 550px) {
+      gap: 10px;
+    }
   }
 
   .navigation__link {
@@ -346,7 +362,7 @@
     }
 
     .social-list__link {
-      border: 1px solid #33697C;
+      border: 1px solid #33697c;
       width: 40px;
       height: 40px;
     }

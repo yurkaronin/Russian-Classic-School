@@ -1,0 +1,63 @@
+.teacher-card {
+  display: grid;
+  gap: 33px;
+  max-width: 990px;
+  padding: 52px 56px;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+
+  @media (max-width: 1024px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+
+  .button--close-text {
+    display: none;
+
+    @media (max-width: 700px) {
+    display: block;
+  }
+  }
+}
+
+.teacher-card__photo {
+  max-width: 304px;
+  display: block;
+  height: auto;
+
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
+}
+.teacher-card__details {
+  max-width: 528px;
+}
+
+.teacher-card__title {
+  margin-bottom: 13px !important;
+
+  @media (max-width: 700px) {
+    margin-bottom: 15px !important;
+  }
+}
+
+.teacher-card__subtitle {
+  margin-bottom: 24px;
+
+  @media (max-width: 700px) {
+    margin-bottom: 10px;
+  }
+}
+
+.teacher-card__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #17191a;
+  p {
+    margin-top: 0;
+  }
+}
