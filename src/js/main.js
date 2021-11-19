@@ -82,15 +82,21 @@ document.addEventListener('click', function (event) {
 });
 
 // аккордеон faq
-document.addEventListener('click', function (e) {
-  if (e.target.classList.contains('faq__button')) {
-    if (e.target.closest('.faq__item').classList.contains('active')) {
-      e.target.closest('.faq__item').classList.remove('active');
-    } else {
-      e.target.closest('.faq__item').classList.add('active');
-    }
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
   }
-});
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+};
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 // Диалоговые окна
 const btns = document.querySelectorAll('.btn');
