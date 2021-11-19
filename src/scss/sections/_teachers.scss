@@ -96,11 +96,13 @@
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
+  padding: 10px 0;
   padding-left: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:active,

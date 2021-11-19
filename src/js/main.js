@@ -1,13 +1,5 @@
 var swiper = new Swiper(".teachers-swiper", {
   breakpoints: {
-    /* 320: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    }, */
     1024: {
       slidesPerView: 1,
       spaceBetween: 16,
@@ -17,7 +9,7 @@ var swiper = new Swiper(".teachers-swiper", {
       spaceBetween: 32,
     }
   },
-  grabCursor: true,
+  loop: true,
   pagination: {
     el: ".teachers-swiper__pagination",
     clickable: true,
@@ -87,8 +79,7 @@ document.addEventListener('click', function (event) {
     });
     event.target.classList.add('navigation__link--active');
   }
-})
-
+});
 
 // аккордеон faq
 document.addEventListener('click', function (e) {
@@ -100,32 +91,6 @@ document.addEventListener('click', function (e) {
     }
   }
 });
-
-
-// плавная анимация скрола по якорной ссылке
-const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-  animationTime = 700,
-  framesCount = 40;
-
-anchors.forEach(function (item) {
-  item.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-
-    let scroller = setInterval(function () {
-      let scrollBy = coordY / framesCount;
-
-      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        window.scrollBy(0, scrollBy);
-      } else {
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
-      }
-    }, animationTime / framesCount);
-  });
-});
-
 
 // Диалоговые окна
 const btns = document.querySelectorAll('.btn');
@@ -201,6 +166,21 @@ modalOverlay.addEventListener('click', (e) => {
     }
   })
 })();
+
+// //плавная прокрутка до блока js
+const anchors = document.querySelectorAll('a[data-target^="anchor"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault(); //отмена стандартного поведения элемента
+    const sectionTarget = anchor.getAttribute("href");
+    let targetOffset = document.querySelector("" + sectionTarget).offsetTop - 120;
+    window.scrollTo({
+      top: targetOffset,
+      behavior: "smooth"
+    });
+  });
+}
 
 
 
