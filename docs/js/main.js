@@ -30,6 +30,7 @@ var swiperTwo = new Swiper(".reviews-swiper", {
     type: "fraction",
   },
   loop: true,
+  centeredSlides: true,
   navigation: {
     nextEl: ".reviews-swiper__button-next",
     prevEl: ".reviews-swiper__button-prev",
