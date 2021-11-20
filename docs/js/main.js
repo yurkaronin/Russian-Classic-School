@@ -3,14 +3,18 @@ var swiper = new Swiper(".teachers-swiper", {
     1024: {
       slidesPerView: 1,
       spaceBetween: 16,
+      centeredSlides: true,
+      slidesPerView: "auto",
     },
     1420: {
       slidesPerView: 2,
       spaceBetween: 32,
+      centeredSlides: true,
+      slidesPerView: "auto",
     }
   },
-  slidesPerView: "auto",
-  centeredSlides: true,
+  /* slidesPerView: "auto",
+  centeredSlides: true, */
   loop: true,
   pagination: {
     el: ".teachers-swiper__pagination",
