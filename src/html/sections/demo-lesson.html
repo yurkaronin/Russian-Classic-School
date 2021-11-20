@@ -2,10 +2,15 @@
   <div class="wrapper">
     <div class="demo-lesson__photo">
     <picture>
+      <source type="image/webp" media="(max-width: 360px)" srcset="img/bg/2-360.webp">
       <source media="(max-width: 360px)" srcset="img/bg/2-360.jpg">
+      <source type="image/webp" media="(max-width: 768px)" srcset="img/bg/2-768.webp">
       <source media="(max-width: 768px)" srcset="img/bg/2-768.jpg">
+      <source type="image/webp" media="(max-width: 1024px)" srcset="img/bg/2-1024.webp">
       <source media="(max-width: 1024px)" srcset="img/bg/2-1024.jpg">
-      <img src="img/bg/2.jpg" width="1920" height="704" alt="фото учебного процесса">
+
+      <source type="image/webp" srcset="img/bg/2.jpg.webp">
+      <img src="img/bg/2.jpg" width="1920" height="704" alt="фото учебного процесса" loading="lazy">
     </picture>
     </div>
     <h2 class="demo-lesson__title title">Открытый урок 20 октября 2021</h2>

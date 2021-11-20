@@ -7,10 +7,16 @@
         <a class="gallery__link" data-fslightbox="gallery" href="img/gallery/1.jpg">
           <div class="gallery__photo decorate-border">
               <picture>
+
+                <source type="image/webp" media="(max-width: 360px)" srcset="img/gallery/1-360.webp">
                 <source media="(max-width: 360px)" srcset="img/gallery/1-360.jpg">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/gallery/1-768.webp">
                 <source media="(max-width: 768px)" srcset="img/gallery/1-768.jpg">
+                <source type="image/webp" media="(max-width: 1024px)" srcset="img/gallery/1-1024.webp">
                 <source media="(max-width: 1024px)" srcset="img/gallery/1-1024.jpg">
-                <img src="img/gallery/1.jpg" width="416" height="312" alt="Обложка альбома">
+
+                <source type="image/webp" srcset="img/gallery/1.webp">
+                <img src="img/gallery/1.jpg" width="416" height="312" alt="Обложка альбома" loading="lazy">
               </picture>
           </div>
           <div class="gallery__description">
