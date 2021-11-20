@@ -82,12 +82,6 @@ task('scripts:build', () => {
 task('scripts:docs', () => {
   return src(['./src/js/*.js'])
     .pipe(concat('main.js', { newLine: ';' }))
-    .pipe(
-      babel({
-        presets: ['@babel/env'],
-      })
-    )
-    .pipe(uglify())
     .pipe(dest('./docs/js/'));
 }
 );
@@ -101,17 +95,6 @@ task('copy:libs:build', () => {
 task('copy:libs:docs', () => {
   return src('./src/libs/**/*')
     .pipe(dest('./docs/libs/'))
-});
-
-task('copy:favicon:build', () => {
-  return src('./src/*.ico')
-    .pipe(dest('./build/'))
-    .pipe(browserSync.reload({ stream: true }));
-});
-
-task('copy:favicon:docs', () => {
-  return src('./src/*.ico')
-    .pipe(dest('./docs/'))
 });
 
 task('copy:img:build', () => {
@@ -149,15 +132,6 @@ task('server:docs', () => {
   });
 });
 
-/* task(
-  'default',
-  series(
-    'clean:build',
-    parallel('html:build', 'copy:fonts:build', 'styles:build', 'scripts:build', 'copy:img:build', 'copy:libs:build', 'copy:favicon:build'),
-    parallel('server:build', 'watch')
-  )
-); */
-
 task(
   'default',
   series(
@@ -166,15 +140,6 @@ task(
     parallel('server:build', 'watch')
   )
 );
-
-/* task(
-  'docs',
-  series(
-    'clean:docs',
-    parallel('html:docs', 'copy:fonts:docs', 'styles:docs', 'scripts:docs', 'copy:img:docs', 'copy:libs:docs', 'copy:favicon:docs'),
-    parallel('server:docs')
-  )
-); */
 
 task(
   'docs',
