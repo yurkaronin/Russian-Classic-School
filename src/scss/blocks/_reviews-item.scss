@@ -1,0 +1,39 @@
+.reviews-item {
+  max-width: 980px;
+  padding: 54px 56px 40px;
+
+  .reviews__name {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 6px;
+
+    &::before {
+      left: initial;
+      right: 0;
+      top: -8px;
+      height: 2px;
+      width: 35px;
+    }
+  }
+
+  .reviews__info {
+    margin: 0;
+    color: #747575;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .reviews__details {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

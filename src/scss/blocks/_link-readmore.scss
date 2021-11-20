@@ -1,0 +1,39 @@
+.link-readmore {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #00435b;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: 0.3s;
+
+  &::after {
+    content: url(../img/icons/arrow-bg.svg);
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734;
+
+    &::after {
+      content: url(../img/icons/arrow-bg--mod.svg);
+    }
+  }
+}
