@@ -66,14 +66,14 @@
     <!-- main navigation  -->
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#ABOUT-SCHOOL">о школе</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#TEACHERS">преподаватели</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#EDUCATIONAL-PROGRAMS">образовательные программы</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#FAQ">вопросы и ответы</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#DEMO-LESSON">открытый урок</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#REVIEWS">отзывы</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#GALLERY">галерея</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#CONTACTS">контакты</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#ABOUT-SCHOOL" data-target="anchor">О школе</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#TEACHERS" data-target="anchor">Преподаватели</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#EDUCATIONAL-PROGRAMS" data-target="anchor">Образовательные программы</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#FAQ" data-target="anchor">Вопросы и ответы</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#DEMO-LESSON" data-target="anchor">Открытый урок</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#REVIEWS" data-target="anchor">Отзывы</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#GALLERY" data-target="anchor">Галерея</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#CONTACTS" data-target="anchor">Контакты</a></li>
       </ul>
 
       <div class="header__contacts header__contacts--modile">
@@ -190,8 +190,8 @@
         </div>
       </div>
 
-      <div class="teachers-swiper__button-next swiper-button swiper-button--next"></div>
-      <div class="teachers-swiper__button-prev swiper-button"></div>
+      <button class="teachers-swiper__button-next swiper-button swiper-button--next"></button>
+      <button class="teachers-swiper__button-prev swiper-button"></button>
 
       <div class="teachers-swiper__pagination swiper-pagination"></div>
     </div>
@@ -442,99 +442,177 @@
   <div class="wrapper">
     <h2 class="faq__title title">Часто задаваемые вопросы</h2>
 
-    <ul class="faq__list">
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Сколько человек у вас в классе?</p>
+    <ul class="faq__list accordion">
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Сколько человек у вас в классе?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+          предметов, но не позднее 14:30. Уроки 30-45
+          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не позднее 14:30. Уроки 30-45
-        мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Есть ли у вас какие-то внеклассные совместные мероприятия?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Есть ли у вас какие-то внеклассные совместные мероприятия?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Какой аттестат получает ребенок по окончании?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Какой аттестат получает ребенок по окончании?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Во сколько начинаются и заканчиваются уроки?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Во сколько начинаются и заканчиваются уроки?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Как организовано питание детей?</p>
+
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Как организовано питание детей?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Какая форма одежды принята у вас?</p>
+
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Какая форма одежды принята у вас?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Есть ли у детей какие-то обязанности кроме учебы?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Есть ли у детей какие-то обязанности кроме учебы?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Какие секции и кружки есть у вас?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Какие секции и кружки есть у вас?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Как часто надо выполнять домашние задания?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Как часто надо выполнять домашние задания?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
-      <li class="faq__item">
-        <div class="faq__header">
-          <button class="faq__button button button--border"><span></span></button>
-          <p class="faq__question">Сколько иностранных языков и каких изучают дети?</p>
+      <!-- question and answer -->
+      <li class="faq__item accordion-item">
+
+        <button id="ACCORDION-BUTTON-1" aria-expanded="false">
+          <span class="icon button" aria-hidden="true">
+            <span class="accordion__decor-bord"></span>
+          </span>
+          <span class="accordion-title">Сколько иностранных языков и каких изучают дети?</span>
+        </button>
+
+        <div class="faq__details accordion-content">
+          <p>Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества
+            предметов, но не позднее 14:30. Уроки 30-45
+            мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</p>
         </div>
-        <div class="faq__details">Занятия начинаются с 9 утра, и заканчиваются в зависимости от количества предметов, но не
-          позднее 14:30. Уроки 30-45
-          мин., перемены 10-15 мин, и есть окно продолжительностью 35 мин.</div>
       </li>
+
     </ul>
+
   </div>
 </section>
+
+
+
 
     <section class="demo-lesson" id="DEMO-LESSON">
   <div class="wrapper">
@@ -562,6 +640,7 @@
             увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной аппробации всех
             «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями детского
             восприятия и обучения.</div>
+            <a class="link-readmore btn" data-path="dialog-window-review-text">Читать отзыв</a>
           </div>
 
           <div class="reviews__item swiper-slide">
@@ -573,6 +652,7 @@
               всех
               «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями детского
               восприятия и обучения.</div>
+              <a class="link-readmore btn" data-path="dialog-window-review-text">Читать отзыв</a>
           </div>
 
           <div class="reviews__item swiper-slide">
@@ -584,6 +664,7 @@
               всех
               «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями детского
               восприятия и обучения.</div>
+              <a class="link-readmore btn" data-path="dialog-window-review-text">Читать отзыв</a>
           </div>
 
         </div>
@@ -591,8 +672,8 @@
       </div>
       <div class="reviews__button-wrapper">
 
-      <div class="reviews-swiper__button-prev swiper-button"></div>
-      <div class="reviews-swiper__button-next swiper-button swiper-button--next"></div>
+      <button class="reviews-swiper__button-prev swiper-button"></button>
+      <button class="reviews-swiper__button-next swiper-button swiper-button--next"></button>
     </div>
     </div>
 
@@ -677,28 +758,27 @@
         <li class="contacts__info-item">
           <a class="contacts__tel" href="tel:89183907799">+7 (918) 390-77-99</a>
         </li>
-        <li class="contacts__info-item"><span class="contacts__adress">г. Краснодар, ул. Красина, 9/1 корпус 2, литер "А"</span></li>
+        <li class="contacts__info-item"><span class="contacts__adress">г. Краснодар, ул. Красина, 9/1 корпус 2, литер
+            "А"</span></li>
       </ul>
-      <button class="contacts__modal-button button btn button--border" type="button" data-path="dialog-window-callback">Заказать звонок</button>
+      <button class="contacts__modal-button button btn button--border" type="button"
+        data-path="dialog-window-callback">Заказать звонок</button>
       <div class="contacts__social">
         <h3 class=" contacts__group-title title">Мы в социальных сетях:</h3>
         <div class="contacts__social-list social-list">
           <a class="social-list__link decorate-border" href="#" target="_blank">
             <svg class="social-list__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M11.233 0H4.766A4.772 4.772 0 0 0 0 4.766v6.467A4.772 4.772 0 0 0 4.766 16h6.467A4.772 4.772 0 0 0 16 11.233V4.766A4.772 4.772 0 0 0 11.233 0Zm3.157 11.233a3.157 3.157 0 0 1-3.157 3.157H4.766a3.157 3.157 0 0 1-3.156-3.157V4.766A3.157 3.157 0 0 1 4.766 1.61h6.467a3.157 3.157 0 0 1 3.157 3.156v6.467Z"
-                 />
+                d="M11.233 0H4.766A4.772 4.772 0 0 0 0 4.766v6.467A4.772 4.772 0 0 0 4.766 16h6.467A4.772 4.772 0 0 0 16 11.233V4.766A4.772 4.772 0 0 0 11.233 0Zm3.157 11.233a3.157 3.157 0 0 1-3.157 3.157H4.766a3.157 3.157 0 0 1-3.156-3.157V4.766A3.157 3.157 0 0 1 4.766 1.61h6.467a3.157 3.157 0 0 1 3.157 3.156v6.467Z" />
               <path
-                d="M8 3.862A4.143 4.143 0 0 0 3.862 8 4.143 4.143 0 0 0 8 12.138 4.143 4.143 0 0 0 12.138 8 4.143 4.143 0 0 0 8 3.862Zm0 6.667A2.529 2.529 0 1 1 8 5.47a2.529 2.529 0 0 1 0 5.058Zm4.146-5.644a.992.992 0 1 0 0-1.984.992.992 0 0 0 0 1.984Z"
-                 />
+                d="M8 3.862A4.143 4.143 0 0 0 3.862 8 4.143 4.143 0 0 0 8 12.138 4.143 4.143 0 0 0 12.138 8 4.143 4.143 0 0 0 8 3.862Zm0 6.667A2.529 2.529 0 1 1 8 5.47a2.529 2.529 0 0 1 0 5.058Zm4.146-5.644a.992.992 0 1 0 0-1.984.992.992 0 0 0 0 1.984Z" />
             </svg>
           </a>
           <a class="social-list__link decorate-border" href="#" target="_blank">
             <svg class="social-list__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
                 <path
-                  d="M15.915 11.68a1.108 1.108 0 0 0-.054-.104c-.278-.5-.808-1.114-1.591-1.842l-.017-.016-.008-.008-.008-.009h-.009c-.355-.339-.58-.566-.675-.683-.172-.222-.21-.447-.116-.675.066-.172.316-.536.75-1.091.227-.294.408-.53.54-.708.962-1.277 1.378-2.094 1.25-2.45l-.05-.082c-.032-.05-.118-.096-.257-.138a1.312 1.312 0 0 0-.534-.02l-2.399.016a.311.311 0 0 0-.166.004l-.109.025-.041.021-.034.025a.37.37 0 0 0-.091.088.569.569 0 0 0-.083.145 13.603 13.603 0 0 1-.892 1.875c-.205.344-.394.643-.566.895a4.302 4.302 0 0 1-.434.558 3.02 3.02 0 0 1-.316.288c-.095.072-.167.103-.217.091a6.126 6.126 0 0 1-.141-.033.554.554 0 0 1-.188-.204.914.914 0 0 1-.096-.325 3.582 3.582 0 0 1-.029-.337 7.047 7.047 0 0 1 .005-.4c.005-.173.008-.29.008-.35 0-.211.004-.44.012-.687l.021-.588c.006-.144.008-.297.008-.458 0-.161-.01-.287-.029-.379a1.297 1.297 0 0 0-.087-.267.449.449 0 0 0-.17-.2.963.963 0 0 0-.28-.112 5.543 5.543 0 0 0-1.125-.108c-1.032-.011-1.696.055-1.99.2a1.122 1.122 0 0 0-.317.25c-.1.122-.114.188-.042.2.333.05.57.169.708.358l.05.1c.04.072.078.2.117.383.039.183.064.386.075.608.028.405.028.752 0 1.041-.028.29-.054.514-.08.675a1.351 1.351 0 0 1-.212.575.143.143 0 0 1-.041.041.624.624 0 0 1-.225.042c-.078 0-.172-.039-.283-.117a1.999 1.999 0 0 1-.346-.32 4.287 4.287 0 0 1-.404-.57 9.957 9.957 0 0 1-.467-.867l-.133-.242a20.783 20.783 0 0 1-.341-.679 13.089 13.089 0 0 1-.384-.862.55.55 0 0 0-.2-.267l-.041-.025a.884.884 0 0 0-.325-.125l-2.283.017c-.233 0-.391.053-.475.158l-.033.05A.27.27 0 0 0 0 4.195c0 .06.017.136.05.224a27.49 27.49 0 0 0 1.087 2.266 25.46 25.46 0 0 0 1.02 1.758c.29.444.584.864.884 1.258.3.394.498.647.595.758.097.111.174.194.23.25l.208.2c.133.133.329.293.587.479.258.186.544.37.858.55.314.18.679.327 1.095.441.417.114.822.16 1.217.138h.958c.194-.017.341-.078.441-.184l.033-.041a.554.554 0 0 0 .063-.154c.02-.07.03-.146.03-.23a2.746 2.746 0 0 1 .053-.645c.042-.191.089-.336.142-.433a1.067 1.067 0 0 1 .32-.367.543.543 0 0 1 .067-.029c.133-.044.29-.001.471.13.18.13.35.291.508.483.159.191.349.406.57.645.223.24.417.417.584.534l.167.1c.11.066.255.127.433.183.177.055.333.07.466.041l2.133-.033c.21 0 .375-.035.491-.104.117-.07.186-.146.209-.23a.645.645 0 0 0 .004-.283 1.065 1.065 0 0 0-.059-.22Z"
-                   />
+                  d="M15.915 11.68a1.108 1.108 0 0 0-.054-.104c-.278-.5-.808-1.114-1.591-1.842l-.017-.016-.008-.008-.008-.009h-.009c-.355-.339-.58-.566-.675-.683-.172-.222-.21-.447-.116-.675.066-.172.316-.536.75-1.091.227-.294.408-.53.54-.708.962-1.277 1.378-2.094 1.25-2.45l-.05-.082c-.032-.05-.118-.096-.257-.138a1.312 1.312 0 0 0-.534-.02l-2.399.016a.311.311 0 0 0-.166.004l-.109.025-.041.021-.034.025a.37.37 0 0 0-.091.088.569.569 0 0 0-.083.145 13.603 13.603 0 0 1-.892 1.875c-.205.344-.394.643-.566.895a4.302 4.302 0 0 1-.434.558 3.02 3.02 0 0 1-.316.288c-.095.072-.167.103-.217.091a6.126 6.126 0 0 1-.141-.033.554.554 0 0 1-.188-.204.914.914 0 0 1-.096-.325 3.582 3.582 0 0 1-.029-.337 7.047 7.047 0 0 1 .005-.4c.005-.173.008-.29.008-.35 0-.211.004-.44.012-.687l.021-.588c.006-.144.008-.297.008-.458 0-.161-.01-.287-.029-.379a1.297 1.297 0 0 0-.087-.267.449.449 0 0 0-.17-.2.963.963 0 0 0-.28-.112 5.543 5.543 0 0 0-1.125-.108c-1.032-.011-1.696.055-1.99.2a1.122 1.122 0 0 0-.317.25c-.1.122-.114.188-.042.2.333.05.57.169.708.358l.05.1c.04.072.078.2.117.383.039.183.064.386.075.608.028.405.028.752 0 1.041-.028.29-.054.514-.08.675a1.351 1.351 0 0 1-.212.575.143.143 0 0 1-.041.041.624.624 0 0 1-.225.042c-.078 0-.172-.039-.283-.117a1.999 1.999 0 0 1-.346-.32 4.287 4.287 0 0 1-.404-.57 9.957 9.957 0 0 1-.467-.867l-.133-.242a20.783 20.783 0 0 1-.341-.679 13.089 13.089 0 0 1-.384-.862.55.55 0 0 0-.2-.267l-.041-.025a.884.884 0 0 0-.325-.125l-2.283.017c-.233 0-.391.053-.475.158l-.033.05A.27.27 0 0 0 0 4.195c0 .06.017.136.05.224a27.49 27.49 0 0 0 1.087 2.266 25.46 25.46 0 0 0 1.02 1.758c.29.444.584.864.884 1.258.3.394.498.647.595.758.097.111.174.194.23.25l.208.2c.133.133.329.293.587.479.258.186.544.37.858.55.314.18.679.327 1.095.441.417.114.822.16 1.217.138h.958c.194-.017.341-.078.441-.184l.033-.041a.554.554 0 0 0 .063-.154c.02-.07.03-.146.03-.23a2.746 2.746 0 0 1 .053-.645c.042-.191.089-.336.142-.433a1.067 1.067 0 0 1 .32-.367.543.543 0 0 1 .067-.029c.133-.044.29-.001.471.13.18.13.35.291.508.483.159.191.349.406.57.645.223.24.417.417.584.534l.167.1c.11.066.255.127.433.183.177.055.333.07.466.041l2.133-.033c.21 0 .375-.035.491-.104.117-.07.186-.146.209-.23a.645.645 0 0 0 .004-.283 1.065 1.065 0 0 0-.059-.22Z" />
               </g>
               <defs>
                 <clipPath id="a">
@@ -712,7 +792,7 @@
     </div>
 
     <div class="contacts__map">
-      <img src="img/map/map-bg.jpg" alt="фоновая картинка карты">
+      <div id="map" class="map"></div>
     </div>
   </div>
 </section>
@@ -778,9 +858,9 @@
         </p>
 
         <div class="custom-form__footer">
-          <label class="custom-form__label custom-form__label--confurm">
-            <input class="visually-hidden" type="checkbox" name="confurm" checked>
-            <p class="custom-form__potilic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
+          <label class="custom-form__label custom-form__label--accept">
+            <input class="visually-hidden" type="checkbox" name="accept" checked>
+            <p class="custom-form__politic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
             </p>
           </label>
         </div>
@@ -844,17 +924,23 @@
     <section class="modal modal--free decorate-border big-mod" data-target="dialog-window-educational-programs">
       <div class="educational-programs-modal">
         <h3 class="educational-programs-modal__title title">Математика</h3>
-        <img class="educational-programs-modal__image" src="img/educational-programs/modal-image.jpg" alt="фотография учебного курса">
+        <img class="educational-programs-modal__image" src="img/educational-programs/modal-image.jpg"
+          alt="фотография учебного курса">
         <div class="educational-programs-modal__description">
-          <p>Мы используем уникальную систему, поскольку в ней собран лучший опыт отечественного образования и учитываются
-          современные проверенные тенденции.</p>
-          <p>В основе всей системы и каждого отдельно взятого урока лежит принцип природосообразности: согласование воспитания и
-          обучения с природными зонами роста развития ребёнка, применение сбалансированных средств для его развития.
-          Последовательность в обучении каждому предмету, задана логикой изучаемого материала, а интерес поддерживается
-          выверенными методическими приёмами.</p>
-          <p>Радонеж – это пространство для неравнодушных людей, желающих сохранить психоэмоциональное здоровье детей и поэтому
-          выбирающих классическое, высокорезультативное образование. Многие родители уже заметили и оценили разницу , как в
-          образовательном уровне учащихся РКШ, так и в плане общего развития ребенка.</p>
+          <p>Мы используем уникальную систему, поскольку в ней собран лучший опыт отечественного образования и
+            учитываются
+            современные проверенные тенденции.</p>
+          <p>В основе всей системы и каждого отдельно взятого урока лежит принцип природосообразности: согласование
+            воспитания и
+            обучения с природными зонами роста развития ребёнка, применение сбалансированных средств для его развития.
+            Последовательность в обучении каждому предмету, задана логикой изучаемого материала, а интерес
+            поддерживается
+            выверенными методическими приёмами.</p>
+          <p>Радонеж – это пространство для неравнодушных людей, желающих сохранить психоэмоциональное здоровье детей и
+            поэтому
+            выбирающих классическое, высокорезультативное образование. Многие родители уже заметили и оценили разницу ,
+            как в
+            образовательном уровне учащихся РКШ, так и в плане общего развития ребенка.</p>
         </div>
       </div>
 
@@ -873,14 +959,14 @@
 
           <p class="custom-form__item-wrapper">
             <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
-            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __" id="CUST-FORM-TEL"
-              data-required required>
+            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+              id="CUST-FORM-TEL" data-required required>
           </p>
 
           <div class="custom-form__footer">
-            <label class="custom-form__label custom-form__label--confurm">
-              <input class="visually-hidden" type="checkbox" name="confurm" checked>
-              <p class="custom-form__potilic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
+            <label class="custom-form__label custom-form__label--accept">
+              <input class="visually-hidden" type="checkbox" name="accept" checked>
+              <p class="custom-form__politic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
               </p>
             </label>
           </div>
@@ -897,10 +983,87 @@
       </button>
     </section>
 
+    <!-- review full text  -->
+    <section class="modal modal--free decorate-border" data-target="dialog-window-review-text">
+
+      <div class="reviews-item">
+
+        <div class="reviews__details">
+          <h3>Макс, прив! я тут для тестов накидал текстов в большой отзыв. Их можно удалить, если чё :)</h3>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque vero praesentium!</li>
+            </ul>
+
+            <img src="img/bg/2.jpg" alt="">
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+          <p>Прежде всего, необходимо отметить, что современная тенденция непрерывной модернизации
+            обучающих программ приводит к
+            увеличению пропасти между теорией и педагогической практикой. Нет времени и заинтересованности в честной
+            аппробации
+            всех «новаций» в этой области. В результате имеем красивую теорию, совершенно несовместимую с особенностями
+            детского
+            восприятия и обучения.</p>
+        </div>
+
+        <h3 class="reviews__name title">Болотова Екатерина Александровна</h3>
+        <p class="reviews__info">Мама ребенка Болотова Натана</p>
+      </div>
+
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+    </section>
+
   </div>
 </div>
 
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7a49471f-d85f-4e70-9dd3-a7a498699c63&amp;lang=ru_RU"></script>
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/fslightbox.min.js"></script>
   <script src="./js/main.js"></script>
