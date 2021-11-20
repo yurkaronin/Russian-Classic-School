@@ -80,17 +80,13 @@
 }
 .teachers__description {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   opacity: 0.7;
-
-  @media (max-width: 720px) {
-    margin-bottom: 15px;
-  }
 }
 .teachers__link {
   font-style: normal;
