@@ -33,6 +33,7 @@
     border-bottom: 1px solid #33697c;
   }
 }
+
 .navigation__link {
   color: #ffffff;
   text-decoration: none;
@@ -62,12 +63,6 @@
     padding: 20px 13px;
   }
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: #ffb734;
-  }
-
   &::after {
     content: "";
     display: block;
@@ -93,6 +88,7 @@
       right: 13px;
       height: 45px;
       padding: 10px;
+      background-color: transparent;
     }
 
     @media (max-width: 770px) {
@@ -100,6 +96,12 @@
         right: 0;
       }
     }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb734;
   }
 
   &:hover::after {

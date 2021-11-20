@@ -75,7 +75,7 @@
   font-size: 14px;
 }
 
-.custom-form__potilic {
+.custom-form__politic {
   margin: 0;
   position: relative;
   padding-left: 40px;
@@ -91,7 +91,7 @@
   }
 }
 
-.custom-form__label--confurm input[type="checkbox"]+.custom-form__potilic::before {
+.custom-form__label--accept input[type="checkbox"]+.custom-form__politic::before {
   content: "";
   background-image: url(../img/icons/checkbox-off.svg);
   position: absolute;
@@ -102,7 +102,7 @@
   background-repeat: no-repeat;
 }
 
-.custom-form__label--confurm input[type="checkbox"]:checked+.custom-form__potilic::before {
+.custom-form__label--accept input[type="checkbox"]:checked+.custom-form__politic::before {
   background-image: url(../img/icons/checkbox-on.svg);
 }
 

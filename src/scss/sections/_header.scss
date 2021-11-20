@@ -253,6 +253,13 @@
 
     @media (max-width: 1420px) {
       color: #ffffff;
+      transition: all 200ms linear;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #ffb734;
+      }
     }
   }
 

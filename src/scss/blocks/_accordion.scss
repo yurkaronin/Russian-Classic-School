@@ -1,6 +1,15 @@
 .accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+
   .accordion-item {
-    button[aria-expanded='true'] {
+    background-color: #fff;
+
+    button[aria-expanded="true"] {
     }
   }
   button {
@@ -9,76 +18,144 @@
     text-align: left;
     width: 100%;
     padding: 1em 0;
-
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
     background: none;
     outline: none;
-    &:hover, &:focus {
+    padding-left: 110px;
+
+    @media (max-width: 500px) {
+      padding-left: 80px;
+    }
+
+    &:hover,
+    &:focus {
       cursor: pointer;
       &::after {
         cursor: pointer;
       }
     }
     .accordion-title {
-      padding: 1em 0;
-      padding-left: 1.5em;
+      padding: 0;
+      margin: 0;
+      font-family: "Lora", serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #00435b;
+      z-index: 2;
+      position: relative;
+      pointer-events: none;
+
     }
     .icon {
-      display: inline-block;
       position: absolute;
-      top: 18px;
+      top: 0;
       left: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid;
-      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 100%;
+      padding: 16px 40px;
+      z-index: 2;
+      pointer-events: none;
+      transition: 0.5s;
+
+      @media (max-width: 500px) {
+        padding: 16px 32px;
+      }
       &::before {
         display: block;
         position: absolute;
-        content: '';
-        top: 9px;
-        left: 5px;
-        width: 10px;
+        content: "";
+        top: initial;
+        left: 25px;
+        transition: 0.3s;
+        width: 30px;
         height: 2px;
-        background: currentColor;
+        background-color: #00435b;
+
+        @media (max-width: 500px) {
+          left: 16px;
+        }
       }
       &::after {
         display: block;
         position: absolute;
-        content: '';
-        top: 5px;
-        left: 9px;
-        width: 2px;
-        height: 10px;
-        background: currentColor;
+        content: "";
+        top: initial;
+        left: 25px;
+        transition: 0.3s;
+        width: 30px;
+        height: 2px;
+        background-color: #00435b;
+        transform: rotate(90deg);
+
+        @media (max-width: 500px) {
+          left: 16px;
+        }
       }
     }
   }
-  button[aria-expanded='true'] {
+  button[aria-expanded="true"] {
     .icon {
+      width: 100%;
+      max-width: 100%;
+
       &::after {
-        width: 0;
+        transform: rotate(0deg);
       }
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 25em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
+      overflow: auto;
     }
   }
-  .accordion-content {
+
+}
+
+.accordion .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
+    color: #454747;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all 200ms linear;
+
     p {
       font-size: 1rem;
       font-weight: 300;
-      margin: 2em 0;
+      margin: 0;
+      padding-right: 140px;
+      padding: 31px 40px 28px 112px;
+
+      @media (max-width: 875px) {
+           padding: 15px 24px;
+        }
     }
   }
+
+// support elements
+.accordion__decor-bord {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #ffffff30;
+  pointer-events: none;
 }
