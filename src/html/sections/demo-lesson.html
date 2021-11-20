@@ -1,6 +1,13 @@
 <section class="demo-lesson" id="DEMO-LESSON">
   <div class="wrapper">
-    <img class="demo-lesson__photo" src="img/bg/2-768.jpg" alt="фото с открытого урока">
+    <div class="demo-lesson__photo">
+    <picture>
+      <source media="(max-width: 360px)" srcset="img/bg/2-360.jpg">
+      <source media="(max-width: 768px)" srcset="img/bg/2-768.jpg">
+      <source media="(max-width: 1024px)" srcset="img/bg/2-1024.jpg">
+      <img src="img/bg/2.jpg" width="1920" height="704" alt="фото учебного процесса">
+    </picture>
+    </div>
     <h2 class="demo-lesson__title title">Открытый урок 20 октября 2021</h2>
     <div class="demo-lesson__lead">
       <p>Уважаемые родители, «Радонеж» проводит открытые занятия для желающих понять, как работает система «Русская классическая

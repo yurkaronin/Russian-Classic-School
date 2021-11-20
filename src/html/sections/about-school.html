@@ -1,7 +1,12 @@
 <section class="about-school" id="ABOUT-SCHOOL">
   <div class="wrapper">
     <div class="about-school__image decorate-border">
-    <img src="img/content/about-school.jpg" alt="фото учителя с учеником">
+    <picture>
+      <source media="(max-width: 360px)" srcset="img/content/about-school-360.jpg">
+      <source media="(max-width: 768px)" srcset="img/content/about-school-768.jpg">
+      <source media="(max-width: 1024px)" srcset="img/content/about-school-1024.jpg">
+      <img src="img/content/about-school.jpg" width="530" height="859" alt="фото учителя с учеником">
+    </picture>
     </div>
 
     <div class="about-school__content-wrapper">

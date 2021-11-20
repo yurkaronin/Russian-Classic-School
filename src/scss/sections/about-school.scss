@@ -50,6 +50,7 @@
 
 .about-school__content-wrapper {
   width: 640px;
+  padding-bottom: 80px;
 
   @media (max-width: 1420px) {
     width: calc((100% / 2) - 30px);

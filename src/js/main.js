@@ -9,6 +9,8 @@ var swiper = new Swiper(".teachers-swiper", {
       spaceBetween: 32,
     }
   },
+  slidesPerView: "auto",
+  centeredSlides: true,
   loop: true,
   pagination: {
     el: ".teachers-swiper__pagination",

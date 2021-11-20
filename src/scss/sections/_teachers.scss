@@ -87,6 +87,10 @@
   line-height: 24px;
   color: #ffffff;
   opacity: 0.7;
+
+  @media (max-width: 720px) {
+    margin-bottom: 15px;
+  }
 }
 .teachers__link {
   font-style: normal;
