@@ -13,8 +13,6 @@ var swiper = new Swiper(".teachers-swiper", {
       slidesPerView: "auto",
     }
   },
-  /* slidesPerView: "auto",
-  centeredSlides: true, */
   loop: true,
   pagination: {
     el: ".teachers-swiper__pagination",
