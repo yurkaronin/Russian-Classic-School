@@ -10,6 +10,11 @@
     padding: 68px 0 98px;
   }
 
+  .swiper-button,
+  .swiper-button--next {
+    top: 25%;
+  }
+
   .swiper-button--next {
     left: initial !important;
     right: -31px;
