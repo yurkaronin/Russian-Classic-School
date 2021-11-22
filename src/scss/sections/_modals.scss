@@ -131,8 +131,20 @@
   border: 1px solid #ccd9de;
 }
 
-
 .modal__subtitle {
   color: #00435b;
 }
 
+.educational-programs-modal__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #17191a;
+  opacity: 0.8;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}

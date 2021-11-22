@@ -233,7 +233,7 @@ function init() {
 ymaps.ready(init);
 
 
-
+Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
 
 
 
