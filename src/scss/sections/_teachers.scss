@@ -10,6 +10,10 @@
     padding: 68px 0 98px;
   }
 
+  @media (max-width: 620px) {
+    padding: 70px 0;
+  }
+
   .swiper-button,
   .swiper-button--next {
     top: 25%;

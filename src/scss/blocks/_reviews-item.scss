@@ -2,6 +2,10 @@
   max-width: 980px;
   padding: 54px 56px 40px;
 
+  @media (max-width: 700px) {
+    padding: 35px 25px 40px;
+  }
+
   .reviews__name {
     font-size: 24px;
     line-height: 32px;

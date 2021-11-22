@@ -38,6 +38,7 @@
 
   @media (max-width: 700px) {
     max-height: initial;
+    width: 100%;
   }
 
   img {
@@ -54,6 +55,7 @@
 
   @media (max-width: 1420px) {
     width: calc((100% / 2) - 30px);
+    padding-bottom: 0;
   }
 
   @media (max-width: 700px) {
