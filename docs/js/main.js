@@ -13,8 +13,6 @@ var swiper = new Swiper(".teachers-swiper", {
       slidesPerView: "auto",
     }
   },
-  /* slidesPerView: "auto",
-  centeredSlides: true, */
   loop: true,
   pagination: {
     el: ".teachers-swiper__pagination",
@@ -223,6 +221,13 @@ function init() {
 
   map.geoObjects.add(placemarRkschool);
 
+  placemarRkschool.events
+    .add('mouseenter', function (e) {
+      e.get('target').options.set('iconImageHref', '../img/map/balun-2.svg');
+    })
+    .add('mouseleave', function (e) {
+      e.get('target').options.set('iconImageHref', '../img/map/balun.svg');
+    });
 }
 
 ymaps.ready(init);
