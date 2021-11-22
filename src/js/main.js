@@ -221,6 +221,13 @@ function init() {
 
   map.geoObjects.add(placemarRkschool);
 
+  placemarRkschool.events
+    .add('mouseenter', function (e) {
+      e.get('target').options.set('iconImageHref', '../img/map/balun-2.svg');
+    })
+    .add('mouseleave', function (e) {
+      e.get('target').options.set('iconImageHref', '../img/map/balun.svg');
+    });
 }
 
 ymaps.ready(init);

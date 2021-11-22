@@ -81,6 +81,10 @@
   align-items: flex-start;
   transition: 0.4s linear;
   min-height: 100%;
+
+  @media (max-width: 670px) {
+    gap: 30px;
+  }
 }
 .educational-announcement__icon {
   max-width: 72px;

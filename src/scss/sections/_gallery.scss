@@ -19,10 +19,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  align-items: stretch;
 }
 
 .gallery__item {
   width: calc((100% / 3) - 23px);
+  min-height: 100%;
 
   @media (max-width: 1420px) {
     width: calc((100% / 2) - 23px);
